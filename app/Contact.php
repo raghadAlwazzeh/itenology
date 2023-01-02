@@ -5,9 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 
-
-class Service extends Model
+class Contact extends Model
 {
-
     
 }

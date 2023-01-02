@@ -12,8 +12,9 @@
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="img/slider-bg2.png" alt="Hero Slide">
+                @foreach ($images as $image)
+                <div class="item">
+                        <img src="storage/{{$image->url}}" alt="Hero Slide">
                         <!--Slide Image-->
 
                         <div class="container">
@@ -28,6 +29,10 @@
                         </div>
                         <!--.container-->
                     </div>
+                    
+                @endforeach
+                
+                    
 
                 </div>
                 <!--.carousel-inner-->
@@ -143,56 +148,39 @@
                                 <div class="row">
                                     <div class="col-md-6 col-md-push-6 wow fadeRight">
                                         <div class="handover-work-thumb">
-                                            <img src="{{ asset('img/work-1.jpg') }}" alt="">
+                                            <img src="\storage\{{$projects[0]->project_image_url}}" alt="">
                                         </div><!-- /.client-thumb -->
                                     </div><!-- /.col-md-6 -->
 
                                     <div class="col-md-6 col-md-pull-6 work-col">
                                         <div class="handover-project">
-                                            <h3>Proactively productivate e-business e-commerce</h3>
-                                            <p>Efficiently communicate installed base leadership skills with extensible testing procedures. Enthusiastically evolve leading-edge scenarios.</p>
-                                            <a class="btn btn-primary" href="portfolio-single.html" role="button">Read More</a>
+                                            <h3>{{$projects[0]->project_name}}</h3>
+                                            <p>{!!$projects[0]->project_description!!}</p>
+                                            <a class="btn btn-primary" href="/project/{{$projects[0]->id}}" role="button">Read More</a>
                                         </div><!-- /.handover-project -->
                                     </div><!-- /.col-md-6 -->
                                 </div><!-- /.row -->
                             </div><!-- /.item -->
-
-                            <div class="item">
+                            @for ($i = 1; $i < 3; $i++)
+                           <div class="item">
                                 <div class="row">
                                     <div class="col-md-6 col-md-push-6 wow fadeRight">
                                         <div class="handover-work-thumb">
-                                            <img src="{{ asset('img/work-1.jpg') }}" alt="">
+                                            <img src="\storage\{{$projects[$i]->project_image_url}}" alt="">
                                         </div><!-- /.client-thumb -->
                                     </div><!-- /.col-md-6 -->
 
                                     <div class="col-md-6 col-md-pull-6 work-col">
                                         <div class="handover-project">
-                                            <h3>Proactively productivate e-business e-commerce</h3>
-                                            <p>Efficiently communicate installed base leadership skills with extensible testing procedures. Enthusiastically evolve leading-edge scenarios.</p>
-                                            <a class="btn btn-primary" href="portfolio-single.html" role="button">Read More</a>
+                                            <h3>{{$projects[$i]->project_name}}</h3>
+                                            <p>{!!$projects[$i]->project_description!!}</p>
+                                            <a class="btn btn-primary" href="/project/{{$projects[$i]->id}}" role="button">Read More</a>
                                         </div><!-- /.handover-project -->
                                     </div><!-- /.col-md-6 -->
                                 </div><!-- /.row -->
-                            </div><!-- /.item -->
-
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-md-6 col-md-push-6 wow fadeRight">
-                                        <div class="handover-work-thumb">
-                                            <img src="{{ asset('img/work-1.jpg') }}" alt="">
-                                        </div><!-- /.client-thumb -->
-                                    </div><!-- /.col-md-6 -->
-
-                                    <div class="col-md-6 col-md-pull-6 work-col">
-                                        <div class="handover-project">
-                                            <h3>Proactively productivate e-business e-commerce</h3>
-                                            <p>Efficiently communicate installed base leadership skills with extensible testing procedures. Enthusiastically evolve leading-edge scenarios.</p>
-                                            <a class="btn btn-primary" href="portfolio-single.html" role="button">Read More</a>
-                                        </div><!-- /.handover-project -->
-                                    </div><!-- /.col-md-6 -->
-                                </div><!-- /.row -->
-                            </div><!-- /.item -->
-
+                            </div>
+                            @endfor
+                        
                           </div><!-- /.carousel-inner -->
                         </div><!-- /.carousel -->
                     </section>

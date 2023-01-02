@@ -59,7 +59,8 @@
                                 <div class="col-md-6">
 							<div class="contact-us-form">
 								<h2>Drop us a line</h2>
-								<form id="contactForm" action="sendemail.php" method="POST">
+								<form action="/contact" method="POST">
+								@csrf
 									<div class="row">
 										<div class="col-md-6">
 										  <div class="input-group">
@@ -81,6 +82,7 @@
 										<span class="input-group-addon" id="basic-addon5"><i class="fa fa-file-text-o"></i></span>
 										<textarea id="message" name="message" class="form-control" rows="6" required="" placeholder="Message"></textarea>
 									</div>
+									
 
 									<button type="submit" class="btn btn-primary btn-lg">Send</button>
 								</form>

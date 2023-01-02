@@ -32,42 +32,22 @@
 							<h2 class="section-title">Our Team</h2>
 							<div class="css-team">
 								<div class="row">
+								@foreach ($members as $member)
 									<div class="col-md-4 col-sm-4 col-xs-12">
 										<figure>
 											<div class="css-team-avatar">
 												<div class="css-overlay"></div>
-												<img class="media-object img-responsive" src="img/team/tm1.jpg" alt="Image">
-												<a class="readmore" href="#"><i class="flaticon-square57"></i></a>
+												<img class="media-object img-responsive" src="storage/{{$member->image_url}}" alt="Image">
+												<a class="readmore" href="/member/{{$member->id}}"><i class="flaticon-square57"></i></a>
 											</div>
 											<div class="css-team-info">
-											<h3 class="css-team-heading">Rabih Najib<br> <small>Chief Operations Officer</small></h3>
+											<h3 class="css-team-heading">{{$member->name}}<br> <small>{{$member->position}}</small></h3>
 											</div>
 										</figure>
 									</div><!-- /.col-md-4 -->
-									<div class="col-md-4 col-sm-4 col-xs-12">
-										<figure>
-											<div class="css-team-avatar">
-												<div class="css-overlay"></div>
-												<img class="media-object img-responsive" src="img/team/tm2.jpg" alt="Image">
-												<a class="readmore" href="#"><i class="flaticon-square57"></i></a>
-											</div>
-											<div class="css-team-info">
-											<h3 class="css-team-heading">Morteza Tadayon<br> <small>Vice President</small></h3>
-											</div>
-										</figure>
-									</div><!-- /.col-md-4 -->
-									<div class="col-md-4 col-sm-4 col-xs-12">
-										<figure>
-											<div class="css-team-avatar">
-												<div class="css-overlay"></div>
-												<img class="media-object img-responsive" src="img/team/tm3.jpg" alt="Image">
-												<a class="readmore" href="#"><i class="flaticon-square57"></i></a>
-											</div>
-											<div class="css-team-info">
-											<h3 class="css-team-heading">Amal Abou-Sef<br> <small>President</small></h3>
-											</div>
-										</figure>
-									</div><!-- /.col-md-4 -->
+								@endforeach
+									
+					
 								</div><!-- /.row -->
 							</div><!-- /.css-team -->
 
@@ -84,11 +64,11 @@
 								<div class="col-sm-4">
 
 									<ul class="joblist-link">
-										<li><a href="#">Traffic/Transportation Engineers</a></li>
-										<li><a href="#">Construction Inspectors</a></li>
-										<li><a href="#">GIS Analysts</a></li>
-										<li><a href="#">Construction Managers</a></li>
-										<li><a href="#">Bridge Inspectors</a></li>
+									@foreach ($services as $service)
+										<li><a href="/service/{{$service->id}}">{{$service->service_name}}</a></li>
+									@endforeach
+										
+										
 									</ul>
 								</div>
 							</div>

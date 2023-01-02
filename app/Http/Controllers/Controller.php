@@ -11,8 +11,3 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
-class PageController extends Controller{
-    public function OurTeam(){
-        return view('OurTeam');
-    }
-}

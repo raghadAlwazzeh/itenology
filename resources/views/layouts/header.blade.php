@@ -10,15 +10,15 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- offcanvas-trigger-effects -->
-                    <h1 class="logo"><a class="navbar-brand" href="/"><img src="img/main-logo.png"
+                    <h1 class="logo"><a class="navbar-brand" href="/"><img src="/img/main-logo.png"
                                 alt=""></a></h1>
                 </div>
                 <div class="collapse navbar-collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li class="dropdown"><a href="#">About US </a></li>
-                        <li class="dropdown"><a href="#">Services</a></li>
-                        <li class="dropdown"><a href="#">Contact Us </a></li>
+                        <li class="active"><a href="/">Home</a></li>
+                        <li class="dropdown"><a href="/aboutus">About US </a></li>
+                        <li class="dropdown"><a href="/services">Services</a></li>
+                        <li class="dropdown"><a href="/contactus">Contact Us </a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
@@ -35,11 +35,11 @@
             <div>
             <div>
               <ul>
-                  <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                  <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
 
-                  <li><a href="#"><i class="fa fa-users"></i>About US</a></li>
+                  <li><a href="/aboutus"><i class="fa fa-users"></i>About US</a></li>
 
-                  <li><a href="#"><i class="fa fa-life-ring"></i>Services</a>
+                  <li><a href="/services"><i class="fa fa-life-ring"></i>Services</a>
                     <ul>
                         <li><a href="about-us.html"> Traffic Engineering</a></li>
                         <li><a href="about-us.html"> Construction Management and Inspection</a></li>
@@ -51,7 +51,7 @@
 
                     </ul>
                 </li>
-                  <li><a href="#"><i class="fa fa-envelope-o"></i>Contact</a></li>
+                  <li><a href="contactus"><i class="fa fa-envelope-o"></i>Contact</a></li>
               </ul>
             </div>
           </div>

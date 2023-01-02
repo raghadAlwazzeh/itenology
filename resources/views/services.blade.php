@@ -20,66 +20,22 @@
 					<div class="content-wrapper">
 						<div class="services-wrapper">
 							<div class="row">
+                            @foreach ($services as $service)
                                 <div class="col-md-4">
                                     <div class="service-card">
-                                        <img src="{{ asset('img/Service.jpg') }}" alt="">
+                                    
+                                    
+                                        <img src="/storage/{{$service->image_url}}" alt="">
                                         <div class="text-content">
-                                            <h3>Construction Management and Inspection Services</h3>
-                                            <p>Itenology Corporation staff has performed construction inspection on roadway infrastructures, new bridge construction, caisson drilling/pouring, and rehab of historic structures; and prepared training material and certificates for the inspection of the installation of ancillary structures for MDOT SHA.</p>
-                                            <a href="#">Read More!</a>
+                                            <h3>{{$service->service_name}}</h3>
+                                            <p class="par">{{ strip_tags($service->description) }} </p>
+                                            <a href="/service/{{$service->id}}">Read More!</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="service-card">
-                                        <img src="{{ asset('img/Service.jpg') }}" alt="">
-                                        <div class="text-content">
-                                            <h3>Construction Management and Inspection Services</h3>
-                                            <p>Itenology Corporation staff has performed construction inspection on roadway infrastructures, new bridge construction, caisson drilling/pouring, and rehab of historic structures; and prepared training material and certificates for the inspection of the installation of ancillary structures for MDOT SHA.</p>
-                                            <a href="#">Read More!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="service-card">
-                                        <img src="{{ asset('img/Service.jpg') }}" alt="">
-                                        <div class="text-content">
-                                            <h3>Construction Management and Inspection Services</h3>
-                                            <p>Itenology Corporation staff has performed construction inspection on roadway infrastructures, new bridge construction, caisson drilling/pouring, and rehab of historic structures; and prepared training material and certificates for the inspection of the installation of ancillary structures for MDOT SHA.</p>
-                                            <a href="#">Read More!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="service-card">
-                                        <img src="{{ asset('img/Service.jpg') }}" alt="">
-                                        <div class="text-content">
-                                            <h3>Construction Management and Inspection Services</h3>
-                                            <p>Itenology Corporation staff has performed construction inspection on roadway infrastructures, new bridge construction, caisson drilling/pouring, and rehab of historic structures; and prepared training material and certificates for the inspection of the installation of ancillary structures for MDOT SHA.</p>
-                                            <a href="#">Read More!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="service-card">
-                                        <img src="{{ asset('img/Service.jpg') }}" alt="">
-                                        <div class="text-content">
-                                            <h3>Construction Management and Inspection Services</h3>
-                                            <p>Itenology Corporation staff has performed construction inspection on roadway infrastructures, new bridge construction, caisson drilling/pouring, and rehab of historic structures; and prepared training material and certificates for the inspection of the installation of ancillary structures for MDOT SHA.</p>
-                                            <a href="#">Read More!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="service-card">
-                                        <img src="{{ asset('img/Service.jpg') }}" alt="">
-                                        <div class="text-content">
-                                            <h3>Construction Management and Inspection Services</h3>
-                                            <p>Itenology Corporation staff has performed construction inspection on roadway infrastructures, new bridge construction, caisson drilling/pouring, and rehab of historic structures; and prepared training material and certificates for the inspection of the installation of ancillary structures for MDOT SHA.</p>
-                                            <a href="#">Read More!</a>
-                                        </div>
-                                    </div>
-                                </div>
+                            @endforeach
+                                
+                                
 							</div><!-- /.row -->
 
 						</div><!-- /.content-wrapper -->

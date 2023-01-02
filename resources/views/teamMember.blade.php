@@ -20,14 +20,14 @@
 						<section class="about-us-wrapper">
 							<div class="row margin-bottom-60 member-details-row">
 								<div class="col-md-8">
-									<h2>Rabih Najib</h2>
-									<p>Dr. Najib is a licensed professional engineer in Maryland, Virginia, and Pennsylvania. Dr. Najib has more than 30 years of experience in the fields of transportation and information technology.</p>
+									<h2>{{$member->name}}</h2>
+									<p>{{$member->description}}</p>
 
 								</div><!-- /.col-md-8 -->
 
 								<div class="col-md-4">
 									<div class="info-in-short">
-										<img class="img-responsive" src="img/team/tm1.jpg" alt="">
+										<img class="img-responsive" src="/storage/{{$member->image_url}}" alt="">
 									</div>
 								</div><!-- /.col-md-4 -->
 							</div><!-- /.row -->

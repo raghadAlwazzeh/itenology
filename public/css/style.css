@@ -2011,7 +2011,7 @@ SERVICES PAGE
     color: var(--main-color);
     font-size: 18px;
 }
-.service-card .text-content p{
+.service-card .text-content .par{
     text-align: justify;
     word-break: break-all;
     overflow: hidden;

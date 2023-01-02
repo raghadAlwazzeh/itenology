@@ -13,8 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/', [App\Http\Controllers\PageController::class, 'index']);
+Route::get('/aboutus', [App\Http\Controllers\PageController::class, 'aboutUs']);
+Route::get('/member/{id}', [App\Http\Controllers\PageController::class, 'teamMember']);
+Route::get('/services', [App\Http\Controllers\PageController::class, 'services']);
+Route::get('/service/{id}', [App\Http\Controllers\PageController::class, 'service']);
+Route::get('/project/{id}', [App\Http\Controllers\PageController::class, 'project']);
+Route::post('/contact', [App\Http\Controllers\PageController::class, 'contact']);
+
+
+Route::get('/contactus', function () {
+    return view('contact');
 });
 
 
