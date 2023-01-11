@@ -841,7 +841,12 @@ TESTIMONIAL WRAPPER
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
 }
-
+.handover-wrapper p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .testimonial-wrapper .carousel-indicators li {
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -957,8 +962,23 @@ SUBSCRIPTION PLANS WRAPPER
     margin-left: 8px;
     font-size: 12px;
 }
-
-
+/* ------------------------------------------------------------------
+Clients
+--------------------------------------------------------------------- */
+.our-clients{
+    background-color: white;
+    padding: 60px 0 20px 60px;
+    position: relative;
+}
+.our-clients .section-title{
+    color: var(--main-color);
+}
+.our-clients .owl-carousel .owl-item img{
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
 /* ------------------------------------------------------------------
 SUPPORT WRAPPER
 --------------------------------------------------------------------- */
@@ -1999,17 +2019,22 @@ PORTFOLIO PAGE
 SERVICES PAGE
 -------------------------------------------------------------------*/
 .service-card{
-    height: 450px;
+    height: 420px;
     margin-top: 15px;
     border: 1px solid #ddd;
     box-shadow: rgb(0 0 0 / 16%) 0 5px 10px;
+}
+.service-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 .service-card .text-content{
     padding: 15px;
 }
 .service-card .text-content h3{
     color: var(--main-color);
-    font-size: 18px;
+    font-size: 14px;
 }
 .service-card .text-content .par{
     text-align: justify;
@@ -2123,9 +2148,7 @@ Job Page
     margin-bottom: 10px;
     position: relative;
 }
-.service-details .main-desc{
 
-}
 .our-work .image-wrapper{
     position: relative;
     margin-bottom: 20px;

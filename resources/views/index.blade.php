@@ -29,10 +29,10 @@
                         </div>
                         <!--.container-->
                     </div>
-                    
+
                 @endforeach
-                
-                    
+
+
 
                 </div>
                 <!--.carousel-inner-->
@@ -180,7 +180,7 @@
                                 </div><!-- /.row -->
                             </div>
                             @endfor
-                        
+
                           </div><!-- /.carousel-inner -->
                         </div><!-- /.carousel -->
                     </section>
@@ -262,7 +262,15 @@
                             <li class="wow zoomIn"><a href="#"><img src="img/partner/partner-logo-9.png" alt=""></a></li>
                         </ul>
                     </section> --}}
-
+                    <section class="our-clients">
+                        <h2 class="section-title wow fadeInDown">our Clients</h2>
+                        <div class="our-clients-carousel owl-carousel owl-drag owl-theme">
+                            <a href=""><img src="{{ asset('img/client-1.png') }}" alt=""></a>
+                            <a href=""><img src="{{ asset('img/client-2.png') }}" alt=""></a>
+                            <a href=""><img src="{{ asset('img/client-3.png') }}" alt=""></a>
+                            <a href=""><img src="{{ asset('img/client-4.png') }}" alt=""></a>
+                        </div>
+                    </section>
                     <section class="support-wrapper">
                         <div class="row">
                             <div class="col-lg-8 col-lg-offset-1">
