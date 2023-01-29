@@ -205,13 +205,13 @@ jQuery(function ($) {
     // jQuery to collapse the navbar on scroll
     // ------------------------------------------------------------------
 
-    $(window).scroll(function() {
-        if ($(".navbar").offset().top > 50) {
-            $(".navbar-fixed-top").addClass("top-nav-collapse");
-        } else {
-            $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        }
-    });
+    // $(window).scroll(function() {
+    //     if ($(".navbar").offset().top > 50) {
+    //         $(".navbar-fixed-top").addClass("top-nav-collapse");
+    //     } else {
+    //         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    //     }
+    // });
 
 
 
@@ -385,3 +385,17 @@ jQuery(function ($) {
             },
           });
 }); // JQuery end
+
+
+const navLinks = document.querySelectorAll('.navbar-nav a');
+const currentRoute = window.location.pathname;
+
+navLinks.forEach(link => {
+  if (link.getAttribute('href') === currentRoute) {
+    link.parentElement.classList.add('active');
+  }
+  else{
+    link.parentElement.classList.remove('active');
+
+  }
+});

@@ -20,7 +20,7 @@
 					<div class="content-wrapper">
 						<div class="contact-us-wrapper">
 							<div class="row">
-								<div class="col-md-4">
+								<div class="col-md-6">
 									<div class="mini-contact">
 										<h2>Email us</h2>
 										{{-- <p>If you're encountering an issue or problem when working with ITENOLOGY you can always email us directly or via the form below</p> --}}
@@ -28,7 +28,7 @@
 										<a href="mailto:info@itenology.com">info@itenology.com</a>
 									</div>
 								</div>
-								<div class="col-md-4">
+								<div class="col-md-6">
 									<div class="mini-contact">
 										<h2>Call us</h2>
 										{{-- <p>If you're encountering an issue or problem when working with ITENOLOGY you can always Call us directly or via the form below</p> --}}
@@ -36,12 +36,12 @@
 										<a href="tel:(410) 715-0100">(410) 715-0100</a>
 									</div>
 								</div>
-								<div class="col-md-4">
+								{{-- <div class="col-md-4">
 									<div class="mini-contact">
 										<h2>Tweet us</h2>
 										<a href="https://twitter.com/itenology">Tweet us →</a>
 									</div>
-								</div>
+								</div> --}}
 							</div><!-- /.row -->
 
 
@@ -82,7 +82,7 @@
 										<span class="input-group-addon" id="basic-addon5"><i class="fa fa-file-text-o"></i></span>
 										<textarea id="message" name="message" class="form-control" rows="6" required="" placeholder="Message"></textarea>
 									</div>
-									
+
 
 									<button type="submit" class="btn btn-primary btn-lg">Send</button>
 								</form>

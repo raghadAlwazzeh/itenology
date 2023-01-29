@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top top-nav-collapse" role="navigation">
         <div class="container">
             <div class="flex-header">
                 <div class="navbar-header">
@@ -10,15 +10,16 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- offcanvas-trigger-effects -->
-                    <h1 class="logo"><a class="navbar-brand" href="/"><img src="/img/main-logo.png"
+                    <h1 class="logo"><a class="navbar-brand" href="/"><img src="/img/logo-2.png"
                                 alt=""></a></h1>
                 </div>
                 <div class="collapse navbar-collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="/">Home</a></li>
-                        <li class="dropdown"><a href="/aboutus">About US </a></li>
-                        <li class="dropdown"><a href="/services">Services</a></li>
-                        <li class="dropdown"><a href="/contactus">Contact Us </a></li>
+                        <li class="dropdown"><a href="/aboutus" target="_blank">About US </a></li>
+                        <li class="dropdown"><a href="/services" target="_blank">Services</a></li>
+                        <li class="dropdown"><a href="/career" target="_blank">Career</a></li>
+                        <li class="dropdown"><a href="/contactus" target="_blank">Contact Us </a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>

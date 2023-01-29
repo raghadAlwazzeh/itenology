@@ -19,6 +19,10 @@ class PageController extends Controller
         $projects= Project::all()->take(3);
         return view('index', compact('images', 'clients', 'projects'));
     }
+    public function career(){
+        $services= Service::all()->take(5);
+        return view('career',compact('services'));
+    }
 
     public function aboutUs(){
         $members= Team::all();
@@ -43,7 +47,7 @@ class PageController extends Controller
         return view('service', compact('service', 'subtitles', 'projects'));
     }
     public function project($id){
-        
+
         $subtitles = Subtitle::where('project_id', $id)->get();
         $project = Project::where('id', $id)->first();
         //return $project;

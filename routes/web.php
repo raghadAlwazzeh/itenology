@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\PageController::class, 'index']);
 Route::get('/aboutus', [App\Http\Controllers\PageController::class, 'aboutUs']);
+Route::get('/career', [App\Http\Controllers\PageController::class, 'career']);
 Route::get('/member/{id}', [App\Http\Controllers\PageController::class, 'teamMember']);
 Route::get('/services', [App\Http\Controllers\PageController::class, 'services']);
 Route::get('/service/{id}', [App\Http\Controllers\PageController::class, 'service']);

@@ -980,6 +980,35 @@ Clients
     object-fit: contain;
 }
 /* ------------------------------------------------------------------
+MDOT
+--------------------------------------------------------------------- */
+.Mdot-Section{
+    background-color: white;
+    padding: 60px 0 20px 60px;
+    position: relative;
+}
+.Mdot-Section .section-title{
+    color: var(--main-color);
+}
+.Mdot-Section .content{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+.Mdot-Section .MDOT-element{
+    width: 33%;
+}
+@media (max-width : 767px){
+    .Mdot-Section .content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Mdot-Section .MDOT-element{
+        width: 100%;
+    }
+}
+/* ------------------------------------------------------------------
 SUPPORT WRAPPER
 --------------------------------------------------------------------- */
 .support-wrapper {
@@ -1057,10 +1086,19 @@ footer {
         margin-right: 10px;
 
     }
-    footer .social-media {
-        margin-top: 25px;
+    footer .logo-col{
+        height: 200px;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
+    }
+    footer .social-media {
+        margin-top: 15px;
+        margin-left: -15px;
+        margin-bottom : 20px;
+        display: flex;
+        justify-content: flex-start;
     }
     footer .social-media a i{
         color: #696c71;
@@ -1069,6 +1107,18 @@ footer {
     }
     footer .social-media a i:hover{
         color: var(--main-color);
+    }
+    .MDOT{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .MDOT h4{
+        width: 50%;
+    }
+    .MDOT .MDOT-element{
+        width: 46%;
+        margin: 2%;
     }
 
         @media (max-width:768px){
@@ -1092,6 +1142,20 @@ footer {
             }
             footer .social-media{
                 justify-content: flex-start;
+            }
+            .MDOT{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: flex-start;
+            }
+            .MDOT .MDOT-element{
+                margin: 0;
+                width: 100%;
+            }
+            footer .logo-col{
+                height: auto;
+                align-items : flex-start
             }
         }
 
@@ -2038,7 +2102,6 @@ SERVICES PAGE
 }
 .service-card .text-content .par{
     text-align: justify;
-    word-break: break-all;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
