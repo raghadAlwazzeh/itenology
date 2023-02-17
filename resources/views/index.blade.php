@@ -20,7 +20,7 @@
                     <div class="container">
                         <div class="carousel-caption">
                             {{-- <small class="animated fadeIn">CALL US TODAY</small> --}}
-                            <div class="phone animated lightSpeedIn">(410) 715-0100</div>
+                            {{-- <div class="phone animated lightSpeedIn">(410) 715-0100</div> --}}
                             <h1 class="animated lightSpeedIn">Engineers | Planners | Innovators </h1>
                             <p class="lead animated lightSpeedIn">AUTOMATING YOUR BUSINESS PROCESS <br> DEVELOPING GREEN
                                 SOLUTIONS.</p>

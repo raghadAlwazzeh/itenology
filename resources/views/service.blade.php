@@ -30,11 +30,12 @@
                                     @foreach ($subtitles as $subtitle)
                                     <dl>
                                         <dt>{{$subtitle->subtitle_name}}</dt>
+                                        <img src="{{ asset('img/service-subtitle.jpg') }}" alt="">
                                         <dd>{!! $subtitle->subtitle_description !!}</dd>
                                     </dl>
                                     @endforeach
-                                    
-                                    
+
+
 
                                 </div>
                                 @if(empty($projects))
@@ -51,12 +52,12 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        
+
                                     @endforeach
 
-                                        
 
-                             
+
+
 
                                         </div>
 
